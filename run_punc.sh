@@ -1,0 +1,15 @@
+python run.py  \
+                --tag deberta \
+                --do_train \
+                --max_seq_len 512 \
+                --dump 1000 \
+                --task_name PUNCTask \
+                --data_dir data/tasks/punc \
+                --output_dir output/deberta/punc\
+                --num_train_epochs 10 \
+                --model_dir_or_name bozhou/DeBERTa-base\
+                --warmup 1000 \
+                --learning_rate 1e-6 \
+                --train_batch_size 80 \
+                --fp16 True \
+                --workers 4

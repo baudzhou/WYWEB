@@ -1,0 +1,16 @@
+python run.py  \
+                --tag wywweb \
+                --do_train \
+                --max_seq_len 512 \
+                --dump 3000 \
+                --task_name MTTask \
+                --data_dir data/tasks/wywmt \
+                --output_dir output/deberta/MTTask \
+                --num_train_epochs 10 \
+                --model_dir_or_name bozhou/DeBERTa-base \
+                --learning_rate 2e-4 \
+                --train_batch_size 64 \
+                --fp16 True \
+                --workers 4 \
+                --warmup_proportion 0.1 \
+                --MT 

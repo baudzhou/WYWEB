@@ -1,0 +1,15 @@
+python run.py  \
+                --tag deberta \
+                --do_train \
+                --max_seq_len 48 \
+                --dump 1000 \
+                --task_name FSPCTask \
+                --data_dir data/tasks/fspc \
+                --output_dir output/deberta/FSPCTask \
+                --num_train_epochs 6 \
+                --model_dir_or_name bozhou/DeBERTa-base \
+                --warmup_proportion 0.1 \
+                --learning_rate 2e-5 \
+                --train_batch_size 48 \
+                --fp16 True \
+                --workers 4

@@ -1,0 +1,15 @@
+python run.py  \
+                --tag deberta \
+                --do_train \
+                --max_seq_len 512 \
+                --dump 1000 \
+                --task_name MRCTask \
+                --data_dir data/tasks/mrc \
+                --output_dir output/deberta/mrc \
+                --num_train_epochs 40 \
+                --model_dir_or_name bozhou/DeBERTa-base \
+                --learning_rate 1e-5 \
+                --train_batch_size 10 \
+                --fp16 True \
+                --workers 4 \
+                --warmup 500

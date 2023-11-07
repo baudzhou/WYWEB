@@ -1,0 +1,15 @@
+python run.py  \
+                --tag wywweb \
+                --do_train \
+                --max_seq_len 512 \
+                --dump 1000 \
+                --task_name GLNERTask \
+                --data_dir data/tasks/glner \
+                --output_dir output/deberta/NERTask \
+                --num_train_epochs 10 \
+                --model_dir_or_name bozhou/DeBERTa-base \
+                --warmup_proportion 0.1 \
+                --learning_rate 5e-5 \
+                --train_batch_size 90 \
+                --fp16 True \
+                --workers 4
