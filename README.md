@@ -6,7 +6,7 @@ Classical Chinese is a treasure of the entire human cultural history. We contrib
 We hope more people join in to make this benchmark better and more useful.
 # Leader-board
 ## Online leader-board
-See [WYWEB on CADAL](www.dcd.zju.edu.cn/wyweb) for the official leader-board.
+See [WYWEB on CADAL](http://www.dcd.zju.edu.cn/wyweb) for the official leader-board.
 ## Main
 
 | **Models** | **Avg.** | **PUNC** | **GLNER** | **GJC** | **FSPC** | **TLC** | **Xuci** | **WYWRC** | **IRC** |
